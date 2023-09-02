@@ -6,7 +6,7 @@ class CategoryButton extends StatelessWidget {
   //final IconData icon;
   const CategoryButton({
     super.key,
-    required this.name ,  //required notation ที่เราจะใส่ใน argument ที่บังคับให้ใส่
+    required this.name ,
     required this.image,
     //required this.icon,
   });
@@ -18,14 +18,12 @@ class CategoryButton extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          //Icon(Icons.icon ,size: 50.0,color: color,),
-          Image.asset(image,width: 60.0,height: 60.0,),
-          Text(name,style: TextStyle(fontSize: 14.0,fontWeight: FontWeight.w900)),
+          Image.asset(image,width: 80.0,height: 80.0,),
+          Text(name,style: TextStyle(fontSize: 18.0,fontWeight: FontWeight.w900)),
         ],
       ),
-      //width: 120.0,
       height:150.0 ,
-      decoration: BoxDecoration(border: Border.all(color: Colors.black,style: BorderStyle.solid),borderRadius: BorderRadius.circular(20.0)),
+      decoration: BoxDecoration(border: Border.all(color: Colors.black,style: BorderStyle.solid),borderRadius: BorderRadius.circular(30.0)),
     );
   }
 }

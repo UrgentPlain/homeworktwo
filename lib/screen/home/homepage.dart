@@ -24,9 +24,6 @@ class _HomePageState extends State<HomePage> {
                   Image.asset('assets/image/error.png',width: 40.0),
                   Text('Premium',style: TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold)),
                   SizedBox(width: 40.0),
-
-                  //Icon(Icons.cancel),
-
                 ],
               ),
             ),
@@ -39,10 +36,6 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: [
-                  //icon: Icons.favorite
-                  //icon: Icons.star
-                  //icon: Icons.rocket_launch
-                  //icon: Icons.pets
                   Expanded(child: CategoryButton(name: 'Full Access to Patten Lessons',image: 'assets/image/earth.png')),
                   SizedBox(width: 30.0),
                   Expanded(child: CategoryButton(name: 'Unlock all Limitations',image: 'assets/image/book.png')),
@@ -68,7 +61,6 @@ class _HomePageState extends State<HomePage> {
                   child: Text('2021 Special Early Birds Offer',style: TextStyle(color: Color(0xFFF19393),decoration: TextDecoration.underline,decorationColor: Color(0xFFF19393))),
                 ),
                 Row(
-                  //crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text('IDR50.000',style: TextStyle(fontSize: 30.0,fontWeight: FontWeight.bold)),
